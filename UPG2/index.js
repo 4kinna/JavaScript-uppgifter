@@ -16,11 +16,7 @@ function init() {
 
 function initLoginForm() {
   form = document.createElement("form");
-  form.setAttribute = ("id", "form");
   document.body.appendChild(form);
-  console.log(form);
-
-  return form;
   //Add code here to:
   //create and add form element to the Dom.
 }
@@ -77,4 +73,4 @@ function validateLoginInfo() {
 }
 
 //Write code here to call the init function only after the dom has been loaded (TIP: check "DOMContentLoaded" event)
-init();
+document.addEventListener("DOMContentLoaded", init());
